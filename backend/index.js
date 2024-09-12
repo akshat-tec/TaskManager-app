@@ -10,8 +10,12 @@ const cors = require('cors');
 app.get('/', (req, res) => {
     res.send('Hello from the server');
 });
+const corsOptions = {
+    origin: 'https://task-manager-app-ui.vercel.app', 
+};
 
-app.use(cors());
+app.use(cors(corsOptions));
+
 
 app.use(bodyParser.json());
 app.use('/tasks', TaskRouter)
