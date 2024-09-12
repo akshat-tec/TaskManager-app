@@ -10,11 +10,7 @@ const cors = require('cors');
 app.get('/', (req, res) => {
     res.send('Hello from the server');
 });
-const corsOptions = {
-    origin: 'https://task-manager-app-ui-ak.vercel.app/', 
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 app.use(bodyParser.json());
