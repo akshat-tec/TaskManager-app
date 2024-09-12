@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send('Hello from the server');
 });
 const corsOptions = {
-    origin: 'https://task-manager-app-ui.vercel.app', 
+    origin: 'https://task-manager-app-ui-ak.vercel.app/', 
 };
 
 app.use(cors(corsOptions));
